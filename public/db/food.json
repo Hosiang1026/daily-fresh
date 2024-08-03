@@ -1,0 +1,44 @@
+{
+  "food": [
+    {
+      "id": 6,
+      "category_id": 2,
+      "name": "西瓜",
+      "price": 20,
+      "image": "/images/cucumber.jpg",
+      "show": 1
+    },
+    {
+      "id": 7,
+      "name": "黄豆",
+      "price": "1",
+      "image": "/images/cucumber.jpg",
+      "category_id": 1,
+      "show": 1
+    },
+    {
+      "id": 8,
+      "name": "黄豆",
+      "price": "5",
+      "image": "/images/cucumber.jpg",
+      "category_id": 1,
+      "show": 1
+    },
+    {
+      "id": 9,
+      "name": "西葫芦",
+      "price": "8",
+      "image": "/images/cucumber.jpg",
+      "category_id": 1,
+      "show": 1
+    },
+    {
+      "id": 10,
+      "name": "黄豆",
+      "price": "2",
+      "image": "/images/cucumber.jpg",
+      "category_id": 1,
+      "show": 1
+    }
+  ]
+}

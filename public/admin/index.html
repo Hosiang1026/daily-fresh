@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert2 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  <title>采购管理</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="home" class="module" style="display: block;">
+    <h1>食材管理</h1>
+    <div class="category-buttons">
+      <button onclick="queryFood()">食材</button>
+      <button onclick="queryCategory()">分类</button>
+    </div>
+  </div>
+
+  <div id="order" class="module" style="display: none;">
+    <h1>订单管理</h1>
+    <div class="category-buttons">
+      <button onclick="queryOrder()">订单</button>
+      <button onclick="queryDetail()">明细</button>
+    </div>
+  </div>
+
+  <div id="user" class="module" style="display: none;">
+    <h1>用户管理</h1>
+    <div class="category-buttons">
+      <button onclick="queryUser()">用户</button>
+      <button onclick="queryMoney()">充值</button>
+    </div>
+  </div>
+
+  <main>
+    <section id="food-section" style="padding-top: 125px; display: block;">
+      <table id="food-table">
+        <thead id="food-head"></thead>
+        <tbody id="food-list"></tbody>
+      </table>
+      <div id="food-function"></div>
+    </section>
+
+    <section id="order-section" style="display: none;">
+      <table id="order-table">
+        <thead id="order-head"></thead>
+        <tbody id="order-list"></tbody>
+      </table>
+      <div id="order-function"></div>
+    </section>
+
+    <section id="user-section" style="display: none;">
+      <table id="user-table">
+        <thead id="user-head"></thead>
+        <tbody id="user-list"></tbody>
+      </table>
+      <div id="user-function"></div>
+    </section>
+  </main>
+  <nav>
+    <button id="show-food" onclick="showModule('home')">食材管理</button>
+    <button id="show-order" onclick="showModule('order')">订单管理</button>
+    <button id="show-user" onclick="showModule('user')">用户管理</button>
+  </nav>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+/* 样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 页面背景色和字体设置 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* 确保头部固定在页面顶部 */
+#home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 125px; /* 根据实际需要调整高度 */
+  background-color: #333;
+  color: white;
+  z-index: 1000; /* 确保它在其他内容之上 */
+}
+
+/* 调整主内容区域 */
+main {
+  padding: 20px;
+  padding-top: 140px; /* 增加顶部内边距以考虑固定头部的高度 */
+  overflow-y: auto; /* 启用垂直滚动条 */
+  max-height: calc(100vh - 80px); /* 减去头部和底部导航的总高度 */
+}
+
+/* 模块容器 */
+.module {
+  display: none;
+  background-color: #333;
+  padding-top: 16px;
+  padding-bottom: 9px;
+}
+
+/* 显示的模块 */
+.module.active {
+  display: block;
+}
+
+/* 头部标题 */
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+/* 分类按钮 */
+.category-buttons {
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.category-buttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px; /* 增加按钮圆角 */
+}
+
+.category-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* 底部导航 */
+nav {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #45a049;
+}
+
+
+/* 商品列表 */
+#food-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* 调整间距 */
+  justify-content: center;
+}
+
+.food-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  height: 30%;
+  max-width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  transition: transform 0.2s, box-shadow 0.2s; /* 添加动画效果 */
+}
+
+.food-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 增强悬停效果 */
+}
+
+/* 确保图片不超出容器 */
+.food-item img {
+  max-width: 100%;
+  height: 60px;
+  border-radius: 4px;
+}
+
+/* 菜品标题和价格的边距 */
+.food-item h3 {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.food-item p {
+  margin: 4px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.table-container {
+  max-height: 500px; /* 调整高度以适应你的需求 */
+  overflow-y: auto; /* 启用垂直滚动条 */
+  border: 1px solid #ddd; /* 可选的边框 */
+  background-color: white; /* 可选的背景颜色 */
+}
+
+table {
+  width: 100%;
+  margin-top: -126px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.amount-buttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 2px 1px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px; /* 增加按钮圆角 */
+}
+
+.amount-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* 自定义 SweetAlert2 弹框的样式 */
+.small-popup {
+  width: 200px !important; /* 调整弹框宽度 */
+  padding: 1.25rem !important; /* 调整弹框内边距 */
+  display: flex;
+  align-items: center; /* 垂直居中内容 */
+  justify-content: center; /* 水平居中内容 */
+}
+
+.small-popup .swal2-title {
+  font-size: 1.5rem; /* 调整标题字体大小 */
+}
+
+.small-popup .swal2-content {
+  font-size: 1rem; /* 调整内容字体大小 */
+}

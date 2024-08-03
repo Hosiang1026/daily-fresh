@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SweetAlert2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <!-- SweetAlert2 JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  <title>每日购菜</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="home" class="module" style="display: block;">
+    <h1>新鲜食材</h1>
+    <div class="category-buttons">
+      <button onclick="queryFood(1)">蔬菜</button>
+      <button onclick="queryFood(2)">水果</button>
+    </div>
+  </div>
+  <div id="order" class="module" style="display: none;">
+    <h1>菜篮订单</h1>
+    <div class="category-buttons">
+      <button onclick="loadCart(1)">菜篮</button>
+      <button onclick="queryOrderByUser(1)">订单</button>
+      <button onclick="queryOrderDetail(1)">明细</button>
+    </div>
+  </div>
+  <div id="my" class="module" style="display: none;">
+    <h1>个人中心</h1>
+    <div class="category-buttons">
+      <button onclick="loadMoney(1)">钱包</button>
+      <button onclick="loadRecord(1)">账单</button>
+    </div>
+  </div>
+  <main>
+    <section id="food-section" style="display: block;">
+      <div id="food-list"></div>
+    </section>
+    <section id="order-section" style="display: none;">
+      <table id="order-table">
+        <thead id="order-head"></thead>
+        <tbody id="order-list"></tbody>
+      </table>
+      <div id="order-function" class="amount-buttons" ></div>
+    </section>
+    <section id="my-section" style="display: block;">
+      <div id="myInfo"></div>
+    </section>
+  </main>
+  <nav>
+    <button id="show-home" onclick="showModule('home')">新鲜食材</button>
+    <button id="show-order" onclick="showModule('cart')">菜篮订单</button>
+    <button id="show-my" onclick="showModule('my')">个人中心</button>
+  </nav>
+  <script src="script.js"></script>
+</body>
+</html>

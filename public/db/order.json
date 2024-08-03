@@ -1,0 +1,160 @@
+{
+  "order": [
+    {
+      "id": 1,
+      "order_no": "2024082320261",
+      "amount": 100,
+      "user_id": "张三"
+    },
+    {
+      "id": 2,
+      "order_no": "202408031240572",
+      "amount": 12,
+      "user_id": 1
+    },
+    {
+      "id": 3,
+      "order_no": "202408031243523",
+      "amount": 12,
+      "user_id": 1
+    },
+    {
+      "id": 4,
+      "order_no": "202408031410084",
+      "amount": 12,
+      "user_id": 1
+    },
+    {
+      "id": 5,
+      "order_no": "202408031412525",
+      "amount": 12,
+      "user_id": 1
+    },
+    {
+      "id": 6,
+      "order_no": "202408031415356",
+      "amount": 12,
+      "user_id": 1
+    },
+    {
+      "id": 7,
+      "order_no": "202408031418437",
+      "amount": 12,
+      "user_id": 1
+    },
+    {
+      "id": 8,
+      "order_no": "202408031419188",
+      "amount": 12,
+      "user_id": 1
+    }
+  ],
+  "detail": [
+    {
+      "id": 1,
+      "order_id": 1,
+      "category_id": 1,
+      "name": "黄瓜",
+      "price": 5,
+      "image": "/images/cucumber.jpg"
+    },
+    {
+      "id": 2,
+      "order_id": 1,
+      "category_id": 1,
+      "name": "西红柿",
+      "price": 3,
+      "image": "/images/cucumber.jpg"
+    },
+    {
+      "id": 1,
+      "order_id": 1,
+      "category_id": 1,
+      "name": "豆角",
+      "price": 5,
+      "image": "/images/cucumber.jpg"
+    },
+    {
+      "id": 2,
+      "order_id": 1,
+      "category_id": 1,
+      "name": "白萝卜",
+      "price": 3,
+      "image": "/images/cucumber.jpg"
+    },
+    {
+      "id": 1,
+      "order_id": 1,
+      "category_id": 1,
+      "name": "香干",
+      "price": 5,
+      "image": "/images/cucumber.jpg"
+    },
+    {
+      "id": 2,
+      "order_id": 1,
+      "category_id": 1,
+      "name": "茭白",
+      "price": 3,
+      "image": "/images/cucumber.jpg"
+    },
+    {
+      "id": 3,
+      "order_id": 1,
+      "category_id": 2,
+      "name": "苹果",
+      "price": 8,
+      "image": "/images/cucumber.jpg"
+    },
+    {
+      "id": 4,
+      "order_id": 1,
+      "category_id": 2,
+      "name": "西瓜",
+      "price": 20,
+      "image": "/images/cucumber.jpg"
+    },
+    {
+      "0": {
+        "price": null
+      },
+      "1": {
+        "price": null
+      },
+      "2": {
+        "price": null
+      },
+      "3": {
+        "price": null
+      },
+      "id": 5
+    },
+    {
+      "0": {
+        "price": null
+      },
+      "id": 6
+    },
+    {
+      "0": {
+        "price": null
+      },
+      "id": 7
+    },
+    {
+      "0": {
+        "price": null
+      },
+      "id": 8
+    },
+    {
+      "0": {
+        "price": null
+      },
+      "1": {
+        "price": null
+      },
+      "id": 9
+    }
+  ]
+}
